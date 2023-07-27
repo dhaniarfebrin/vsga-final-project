@@ -48,7 +48,7 @@
                             <td>
                                 <div class="btn-group">
                                     <a href="transaksi/edit?id=<?= $row['id_transaksi'] ?>" class="btn btn-warning">Edit</a>
-                                    <a href="./src/utils/transaksi/transaksi_act.php?id=<?= $row['id_transaksi'] ?>" class="btn btn-danger ms-1">Hapus</a>
+                                    <button onclick="confirmToDelete(<?= $row['id_transaksi'] ?>)" class="btn btn-danger ms-1">Hapus</button>
                                 </div>
                             </td>
                                 
@@ -61,6 +61,12 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="./src/script/script.js"></script>
+    <script>
+    function confirmToDelete(id) {
+        if(confirm(`Apakah anda yakin ingin mengapus ${id}`)) {
+            window.location = `./src/utils/transaksi/transaksi_act.php?id=${id}`
+        }
+    }
+    </script>
   </body>
 </html>

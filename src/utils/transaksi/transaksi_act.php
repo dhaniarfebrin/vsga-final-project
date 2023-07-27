@@ -26,7 +26,7 @@ if (@$_POST['id']) {
 }
 
 if (@$_GET['id']) {
-    echo "<script>confirm('Yakin ingin menghapusnya?')</script>";
+    echo "<script>confirm('haha anda yakin?')</script>";
     $query = "DELETE FROM transaksi WHERE id_transaksi = " . @$_GET['id'];
 }
 
