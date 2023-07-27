@@ -45,6 +45,13 @@ if ($parsed_url['path'] === $host . '/transaksi/add') {
         include_once "./src/pages/transaksi/transaksi_add.php";
     }
 }
+
+if ($parsed_url['path'] === $host . '/transaksi/edit') {
+
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include_once "./src/pages/transaksi/transaksi_edit.php";
+    }
+}
 // end of transaksi
 
 if ($parsed_url['path'] === $host . '/login') {

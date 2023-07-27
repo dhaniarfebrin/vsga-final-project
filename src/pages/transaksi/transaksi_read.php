@@ -33,7 +33,7 @@
                     <?php
                     include_once "./src/koneksi.php";
 
-                    $query = "SELECT * FROM transaksi INNER JOIN buku ON buku.id_buku = transaksi.buku INNER JOIN anggota ON anggota.id = transaksi.anggota";
+                    $query = "SELECT * FROM transaksi INNER JOIN buku ON buku.id_buku = transaksi.buku INNER JOIN anggota ON anggota.id = transaksi.anggota ORDER BY id_transaksi ASC";
 
                     $result = mysqli_query($koneksi, $query);
 
@@ -47,8 +47,8 @@
                             <td><?= $row['status'] ?></td>
                             <td>
                                 <div class="btn-group">
-                                    <a href="transaksi_form.php?id=<?= $row['id'] ?>" class="btn btn-warning">Edit</a>
-                                    <a href="transaksi_act.php?id=<?= $row['id'] ?>" class="btn btn-danger ms-1">Hapus</a>
+                                    <a href="transaksi/edit?id=<?= $row['id_transaksi'] ?>" class="btn btn-warning">Edit</a>
+                                    <a href="#?id=<?= $row['id_transaksi'] ?>" class="btn btn-danger ms-1">Hapus</a>
                                 </div>
                             </td>
                                 

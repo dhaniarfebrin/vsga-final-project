@@ -10,19 +10,19 @@ $tanggal_kembali = $_POST['tanggal_kembali'];
 // Insert  
 if (@$_POST) {
     $status = 'pinjam';
-
     $query = "INSERT INTO transaksi (anggota, buku, tanggal_pinjam, status, tanggal_kembali) VALUES ('$idanggota', '$idbuku', '$tanggal_pinjam', '$status', '$tanggal_kembali')";
 }
 
 if (@$_POST['id']) {
+    $id = $_POST['id'];
     $status = 'kembali';
     $query = "UPDATE transaksi SET
-                 idanggota = '$idanggota', 
+                 anggota = '$idanggota', 
                  buku = '$idbuku', 
                  tanggal_pinjam = '$tanggal_pinjam', 
-                 status = '$status' 
-                 tanggal_kembali = '$tanggal_kembali', 
-                     WHERE id = '$_POST[id]'";
+                 status = '$status',
+                 tanggal_kembali = '$tanggal_kembali'
+                     WHERE id_transaksi = '$id'";
 }
 
 $result = mysqli_query($koneksi, $query);
