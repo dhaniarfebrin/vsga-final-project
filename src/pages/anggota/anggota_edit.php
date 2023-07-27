@@ -24,7 +24,7 @@
     }
     ?>
 
-      <form action="anggota_act.php" method="POST" enctype="multipart/form-data">
+      <form action="./../src/utils/anggota/anggota_act.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= @$data_anggota['id'] ?>" />
 
         <div class="row mb-4">

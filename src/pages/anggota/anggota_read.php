@@ -53,7 +53,7 @@
                             <td>
                             <div class="btn-group">
                                 <a href="anggota/edit?id=<?= $row['id'] ?>" class="btn btn-warning">Edit</a>
-                                <a href="anggota_act.php?id=<?= $row['id'] ?>" class="btn btn-danger ms-1">Hapus</a>
+                                <a href="./src/utils/anggota/anggota_act.php?id=<?= $row['id'] ?>" class="btn btn-danger ms-1">Hapus</a>
                             </div>
                             </td>
                                 
