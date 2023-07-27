@@ -54,16 +54,24 @@ if ($parsed_url['path'] === $host . '/transaksi/edit') {
 }
 // end of transaksi
 
-if ($parsed_url['path'] === $host . '/login') {
-
-    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include_once "./src/pages/auth/login.php";
-    }
-}
-
+// buku
 if ($parsed_url['path'] === $host . '/buku') {
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include_once "./src/pages/buku/buku_read.php";
+    }
+}
+
+if ($parsed_url['path'] === $host . '/buku/add') {
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {        
+        include_once "./src/pages/buku/buku_add.php";
+    }
+}
+// end of buku
+
+if ($parsed_url['path'] === $host . '/login') {
+
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include_once "./src/pages/auth/login.php";
     }
 }

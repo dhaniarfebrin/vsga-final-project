@@ -70,7 +70,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col-4">
-                    <button class="btn btn-primary">Kirim</button>
+                    <button class="btn btn-primary" type="submit">Kirim</button>
                     <a href="../transaksi">Kembali</a>
                 </div>
             </div>
