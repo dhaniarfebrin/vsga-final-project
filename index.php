@@ -31,13 +31,21 @@ if ($parsed_url['path'] === $host . '/anggota/add') {
 }
 // end of anggota
 
-
+// transaksi
 if ($parsed_url['path'] === $host . '/transaksi') {
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include_once "./src/pages/transaksi/transaksi_read.php";
     }
 }
+
+if ($parsed_url['path'] === $host . '/transaksi/add') {
+
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include_once "./src/pages/transaksi/transaksi_add.php";
+    }
+}
+// end of transaksi
 
 if ($parsed_url['path'] === $host . '/login') {
 

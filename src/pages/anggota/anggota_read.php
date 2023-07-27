@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
+    <?php include_once "./src/components/NavBar.php" ?>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mt-5">

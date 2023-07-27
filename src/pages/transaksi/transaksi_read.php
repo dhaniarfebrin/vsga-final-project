@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
+  <?php include_once "./src/components/NavBar.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mt-5">
                 <h1>Daftar Transaksi</h1>
-                <a href="transaksi_form.php" class="btn btn-primary mb-5 mt-4">Tambah Transaksi</a>
-                <a href="anggota_lap.php" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
+                <a href="transaksi/add" class="btn btn-primary mb-5 mt-4">Tambah Transaksi</a>
+                <a href="#" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
             </div>
         </div>
         <div class="row">

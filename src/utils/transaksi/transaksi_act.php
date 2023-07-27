@@ -28,5 +28,5 @@ if (@$_POST['id']) {
 $result = mysqli_query($koneksi, $query);
 
 if ($result) {
-    header("Location: transaksi_read.php");
+    header("Location: ./../../../transaksi");
 }

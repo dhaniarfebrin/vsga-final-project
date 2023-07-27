@@ -23,7 +23,7 @@
 
         ?>
 
-        <form action="transaksi_act.php" method="POST">
+        <form action="./../src/utils/transaksi/transaksi_act.php" method="POST">
             <div class="row mb-3">
                 <label for="buku" class="col-lg-2 col-form-label">Anggota</label>
                 <div class="col-lg-3">
@@ -71,7 +71,7 @@
             <div class="row mb-3">
                 <div class="col-4">
                     <button class="btn btn-primary">Kirim</button>
-                    <a href="transaksi_read.php">Kembali</a>
+                    <a href="../transaksi">Kembali</a>
                 </div>
             </div>
         </form>
