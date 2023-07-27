@@ -25,7 +25,7 @@ if (@$_POST) {
 // }
 
 if (@$_GET['id']) {
-    $query = "DELETE FROM transaksi WHERE id_transaksi = " . @$_GET['id'];
+    $query = "DELETE FROM buku WHERE id_buku = " . @$_GET['id'];
 }
 
 $result = mysqli_query($koneksi, $query);
