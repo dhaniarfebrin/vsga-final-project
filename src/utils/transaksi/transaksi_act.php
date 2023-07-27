@@ -25,6 +25,11 @@ if (@$_POST['id']) {
                      WHERE id_transaksi = '$id'";
 }
 
+if (@$_GET['id']) {
+    echo "<script>confirm('Yakin ingin menghapusnya?')</script>";
+    $query = "DELETE FROM transaksi WHERE id_transaksi = " . @$_GET['id'];
+}
+
 $result = mysqli_query($koneksi, $query);
 
 if ($result) {
