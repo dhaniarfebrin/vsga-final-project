@@ -67,6 +67,13 @@ if ($parsed_url['path'] === $host . '/buku/add') {
         include_once "./src/pages/buku/buku_add.php";
     }
 }
+
+if ($parsed_url['path'] === $host . '/buku/edit') {
+
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include_once "./src/pages/buku/buku_edit.php";
+    }
+}
 // end of buku
 
 if ($parsed_url['path'] === $host . '/login') {

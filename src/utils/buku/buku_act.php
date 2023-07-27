@@ -7,22 +7,20 @@ $pengarang = $_POST['pengarang'];
 $penerbit = $_POST['penerbit'];
 $tahun = $_POST['tahun'];
 
-// Insert  
-if (@$_POST) {
+
+if (@$_POST['id']) {
+    $id = $_POST['id'];
+    $query = "UPDATE buku SET
+                 judul_buku = '$judul_buku', 
+                 isbn = '$isbn', 
+                 pengarang = '$pengarang', 
+                 penerbit = '$penerbit',
+                 tahun = '$tahun'
+                     WHERE id_buku = '$id'";
+} else if (@$_POST) {
     $query = "INSERT INTO buku (judul_buku, isbn, pengarang, penerbit, tahun) VALUES ('$judul_buku', '$isbn', '$pengarang', '$penerbit', '$tahun')";
 }
 
-// if (@$_POST['id']) {
-//     $id = $_POST['id'];
-//     $status = 'kembali';
-//     $query = "UPDATE transaksi SET
-//                  anggota = '$idanggota', 
-//                  buku = '$idbuku', 
-//                  tanggal_pinjam = '$tanggal_pinjam', 
-//                  status = '$status',
-//                  tanggal_kembali = '$tanggal_kembali'
-//                      WHERE id_transaksi = '$id'";
-// }
 
 if (@$_GET['id']) {
     $query = "DELETE FROM buku WHERE id_buku = " . @$_GET['id'];
