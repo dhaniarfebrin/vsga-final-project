@@ -13,9 +13,9 @@ if ($parsed_url['path'] === $host . '/') {
 // anggota
 if ($parsed_url['path'] === $host . '/anggota') {
 
-    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include_once "./src/pages/anggota/anggota_read.php";
-    }
+    // }
 }
 
 if ($parsed_url['path'] === $host . '/anggota/edit') {
@@ -57,9 +57,9 @@ if ($parsed_url['path'] === $host . '/transaksi/edit') {
 // buku
 if ($parsed_url['path'] === $host . '/buku') {
 
-    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include_once "./src/pages/buku/buku_read.php";
-    }
+    // }
 }
 
 if ($parsed_url['path'] === $host . '/buku/add') {

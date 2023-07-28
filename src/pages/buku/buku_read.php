@@ -17,6 +17,14 @@
                 <a href="#" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
             </div>
         </div>
+        <form method="POST" class="row mb-4">
+            <div class="col-lg-4 offset-lg-6">
+                <input type="text" name="pencarian" class="form-control" />
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-primary">Cari</button>
+            </div>
+        </form>
         <div class="row">
             <table class="table table-hover">
                 <thead class="table-primary">
@@ -34,12 +42,26 @@
                     <?php
                     include_once "./src/koneksi.php";
 
-                    $query = "SELECT * FROM buku";
+                    if (@$_POST['pencarian']) {
+                        $pencarian = trim(mysqli_real_escape_string($koneksi, $_POST['pencarian']));
+                        if ($pencarian != "") {
+                            $query = "SELECT * FROM buku WHERE
+                                        judul_buku LIKE '%$pencarian%'
+                                        OR isbn like '%$pencarian%'
+                                        OR pengarang like '%$pencarian%'
+                                        OR penerbit like '%$pencarian%'
+                                        OR tahun like '%$pencarian%'";
+                        } else {
+                            $query = "SELECT * FROM buku";
+                        }
+                    } else {
+                        $query = "SELECT * FROM buku";
+                    }
 
                     $result = mysqli_query($koneksi, $query);
 
                     foreach ($result as $key => $row) {
-                      ?>
+                        ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $row['judul_buku'] ?></td>
