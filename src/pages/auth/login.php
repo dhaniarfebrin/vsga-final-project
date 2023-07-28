@@ -18,7 +18,7 @@
       if (@$_POST) {
         if ($_POST["username"] == "admin") {
           if ($_POST["password"] == "password") {
-            echo "mantap bang";
+            header("Location: transaksi");
           }
         }
       }
@@ -37,7 +37,7 @@
             <label for="floatingPassword">Password</label>
           </div>
 
-          <button class="btn btn-primary w-100 py-2 mt-4" type="submit">Sign in</button>
+          <button class="btn btn-primary w-100 py-2 mt-4">Sign in</button>
         </form>
       </main>
     </div>

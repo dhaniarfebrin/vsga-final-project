@@ -78,7 +78,7 @@ if ($parsed_url['path'] === $host . '/buku/edit') {
 
 if ($parsed_url['path'] === $host . '/login') {
 
-    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include_once "./src/pages/auth/login.php";
-    }
+    // }
 }
