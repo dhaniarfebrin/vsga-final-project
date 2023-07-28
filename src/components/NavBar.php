@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="./">Simperpus</a>
+      <a class="navbar-brand" href="#">Simperpus</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,8 +21,8 @@
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Laporan</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="buku-lap.php">Laporan Buku</a></li>
-              <li><a class="dropdown-item" href="anggota-lap.php">Laporan Anggota</a></li>
+              <!-- <li><a class="dropdown-item" href="buku-lap.php">Laporan Buku</a></li>
+              <li><a class="dropdown-item" href="anggota-lap.php">Laporan Anggota</a></li> -->
               <li><a class="dropdown-item" href="transaksi-lap.php">Laporan Transaksi</a></li>
             </ul>
           </li>

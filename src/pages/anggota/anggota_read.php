@@ -17,7 +17,7 @@
             <div class="col-lg-12 text-center mt-5">
                 <h1>Daftar Anggota</h1>
                 <a href="anggota/add" class="btn btn-primary mb-5 mt-4">Tambah Anggota</a>
-                <a href="#" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
+                <!-- <a href="#" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a> -->
             </div>
         </div>
         <form method="POST" class="row mb-4">
