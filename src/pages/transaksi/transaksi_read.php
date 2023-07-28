@@ -14,7 +14,7 @@
             <div class="col-lg-12 text-center mt-5">
                 <h1>Daftar Transaksi</h1>
                 <a href="transaksi/add" class="btn btn-primary mb-5 mt-4">Tambah Transaksi</a>
-                <a href="#" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
+                <a href="transaksi_lap" class="btn btn-secondary mb-5 mt-4">Cetak Laporan</a>
             </div>
         </div>
         <div class="row">

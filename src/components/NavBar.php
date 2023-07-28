@@ -23,7 +23,7 @@
             <ul class="dropdown-menu">
               <!-- <li><a class="dropdown-item" href="buku-lap.php">Laporan Buku</a></li>
               <li><a class="dropdown-item" href="anggota-lap.php">Laporan Anggota</a></li> -->
-              <li><a class="dropdown-item" href="transaksi-lap.php">Laporan Transaksi</a></li>
+              <li><a class="dropdown-item" href="transaksi_lap">Laporan Transaksi</a></li>
             </ul>
           </li>
         </ul>
