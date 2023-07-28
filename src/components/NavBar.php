@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="./">Home</a>
+            <a class="nav-link active" href="./transaksi">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./buku">Buku</a>
@@ -27,8 +27,8 @@
             </ul>
           </li>
         </ul>
-        <div class="ml-auto">
-          <!-- <a href="logout.php" class="btn btn-outline-secondary"><i class="fa-solid fa-power-off"></i> Logout</a> -->
+        <div class="ms-auto">
+          <a href="./" class="btn btn-outline-danger rounded-pill">Logout</a>
         </div>
       </div>
     </div>
